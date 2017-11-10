@@ -14,10 +14,6 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
-app.get('/', function(request, response) {
-  response.render('pages/index');
-});
-
 app.get('/about', function(request, response) {
   response.render('pages/about');
 });
