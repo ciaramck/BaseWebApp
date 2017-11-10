@@ -1,12 +1,28 @@
 <html lang="en">
 <head>
     <% include ../partials/head %>
+    <header>
+    <% include ../partials/navbar %>
+  </header>
 </head>
 
 <body>
 
   <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
+
+  <script>
+  	app.get('/', function(request, response) {
+  response.render('pages/index');
+});
+
+app.get('/about', function(request, response) {
+  response.render('pages/about');
+});
+
+app.get('/projects', function(request, response) {
+  response.render('pages/projects');
+});</script>
   <div class="page-header">
     <h1>YOYO web apps are so cool</h1>
   </div>
